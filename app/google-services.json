@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "810383733514",
+    "project_id": "fruit-bussiness",
+    "storage_bucket": "fruit-bussiness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810383733514:android:94738fbc670a288de900f3",
+        "android_client_info": {
+          "package_name": "com.example.fruitbussiness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1jJOAMQN51Z3elhKQARpHpkhJjX67T4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
