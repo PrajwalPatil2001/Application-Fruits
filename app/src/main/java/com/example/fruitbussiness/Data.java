@@ -1,14 +1,16 @@
 package com.example.fruitbussiness;
 
 public class Data {
-    String date, quantity, price, totalprice , appquantity,appprice,apptotal;
+    String date, quantity, price, totalprice , appquantity,appprice,apptotal,bquantity,bprice,btotal;
 
 
     public Data() {
 
     }
 
-    public Data(String quantity, String price, String totalprice,String appquantity,String appprice,String apptotal) {
+    public Data(String quantity, String price, String totalprice,
+                String appquantity,String appprice,String apptotal,
+                String bquantity,String bprice,String btotal) {
         this.quantity = quantity;
         this.price = price;
         this.totalprice = totalprice;
@@ -18,9 +20,34 @@ public class Data {
         this.appprice = appprice;
         this.apptotal = apptotal;
 
-
+        this.bquantity = bquantity;
+        this.bprice = bprice;
+        this.btotal = btotal;
     }
 
+    public String getBquantity() {
+        return bquantity;
+    }
+
+    public void setBquantity(String bquantity) {
+        this.bquantity = bquantity;
+    }
+
+    public String getBprice() {
+        return bprice;
+    }
+
+    public void setBprice(String bprice) {
+        this.bprice = bprice;
+    }
+
+    public String getBtotal() {
+        return btotal;
+    }
+
+    public void setBtotal(String btotal) {
+        this.btotal = btotal;
+    }
 
     public String getAppquantity() {
         return appquantity;

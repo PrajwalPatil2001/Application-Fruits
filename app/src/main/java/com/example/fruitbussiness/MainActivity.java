@@ -449,12 +449,16 @@ public class MainActivity extends AppCompatActivity {
                 String appprice = num2.getText().toString();
                 String apptotal= tvans.getText().toString();
 
+                String bquantity = bnum1.getText().toString();
+                String bprice = bnum2.getText().toString();
+                String btotal= bans.getText().toString();
 
-                if(!quantity.isEmpty() && !price.isEmpty() && !totalprice.isEmpty()
-                ){
+                if(!quantity.isEmpty() && !price.isEmpty() && !totalprice.isEmpty()){
 
                     Data data = new Data(quantity,price,totalprice,
-                            appquantity,appprice,apptotal);
+                            appquantity,appprice,apptotal,
+                            bquantity,bprice,btotal
+                            );
 
 
                     db = FirebaseDatabase.getInstance();

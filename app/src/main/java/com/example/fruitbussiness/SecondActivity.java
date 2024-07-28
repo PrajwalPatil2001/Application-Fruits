@@ -23,6 +23,7 @@ public class SecondActivity extends AppCompatActivity {
     EditText etdate;
     TextView kiwiq, kiwip, kiwitotal;
     TextView appqun,appp,appletotal;
+    TextView bananaquntity,bananaprice,bananatotal;
     AppCompatButton readbtn;
     FirebaseDatabase db;
     DatabaseReference reference;
@@ -87,6 +88,14 @@ public class SecondActivity extends AppCompatActivity {
                         appqun.setText(appquantity);
                         appp.setText(appprice);
                         appletotal.setText(apptotal);
+
+                        String bquantity = String.valueOf(dataSnapshot.child("bquantity").getValue());
+                        String bprice = String.valueOf(dataSnapshot.child("bprice").getValue());
+                        String btotal = String.valueOf(dataSnapshot.child("btotal").getValue());
+
+                        bananaquntity.setText(bquantity);
+                        bananaprice.setText(bprice);
+                        bananatotal.setText(btotal);
                     }
                     else{
                         Toast.makeText(SecondActivity.this, "Data for this date is not Exist", Toast.LENGTH_SHORT).show();

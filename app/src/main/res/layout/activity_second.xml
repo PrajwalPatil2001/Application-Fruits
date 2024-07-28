@@ -156,8 +156,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Apple:"
         android:fontFamily="serif"
+        android:text="Apple:"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -242,6 +242,100 @@
         app:layout_constraintEnd_toEndOf="@+id/textView22"
         app:layout_constraintStart_toStartOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+
+    <TextView
+        android:id="@+id/tvbanana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Banana:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/bananapack"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:hint="pack"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/appqun"
+        app:layout_constraintStart_toStartOf="@+id/appqun"
+        app:layout_constraintTop_toBottomOf="@+id/appqun" />
+
+    <TextView
+        android:id="@+id/bananaprice"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="price"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/appp"
+        app:layout_constraintStart_toStartOf="@+id/appp"
+        app:layout_constraintTop_toBottomOf="@+id/appp" />
+
+    <TextView
+        android:id="@+id/bananars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Rs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ars"
+        app:layout_constraintStart_toStartOf="@+id/ars"
+        app:layout_constraintTop_toBottomOf="@+id/ars" />
+
+    <TextView
+        android:id="@+id/bananaequal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/equalapple"
+        app:layout_constraintStart_toStartOf="@+id/equalapple"
+        app:layout_constraintTop_toBottomOf="@+id/equalapple" />
+
+    <TextView
+        android:id="@+id/bananatotal"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Total"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/appletotal"
+        app:layout_constraintStart_toStartOf="@+id/appletotal"
+        app:layout_constraintTop_toBottomOf="@+id/appletotal" />
+
+    <TextView
+        android:id="@+id/bananatrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Rs"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/apprs"
+        app:layout_constraintStart_toStartOf="@+id/apprs"
+        app:layout_constraintTop_toBottomOf="@+id/apprs" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
