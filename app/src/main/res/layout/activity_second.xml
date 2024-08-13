@@ -29,6 +29,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="DD/M/YYYY :"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/etdate"
+        app:layout_constraintEnd_toStartOf="@+id/etdate"
+        app:layout_constraintTop_toTopOf="@+id/etdate" />
+
     <EditText
         android:id="@+id/etdate"
         android:layout_width="wrap_content"
@@ -249,8 +261,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="serif"
         android:text="Banana:"
+        android:fontFamily="serif"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -264,7 +276,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:hint="pack"
+        android:hint="Caret"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -336,6 +348,101 @@
         app:layout_constraintEnd_toEndOf="@+id/apprs"
         app:layout_constraintStart_toStartOf="@+id/apprs"
         app:layout_constraintTop_toBottomOf="@+id/apprs" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nilam:"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvbanana"
+        app:layout_constraintStart_toStartOf="@+id/tvbanana"
+        app:layout_constraintTop_toBottomOf="@+id/tvbanana" />
+
+    <TextView
+        android:id="@+id/nilamkg"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:hint="total Kg"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bananapack"
+        app:layout_constraintStart_toEndOf="@+id/tvbanana"
+        app:layout_constraintTop_toBottomOf="@+id/bananapack" />
+
+    <TextView
+        android:id="@+id/nilamprice"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:hint="price"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bananaprice"
+        app:layout_constraintStart_toStartOf="@+id/bananaprice"
+        app:layout_constraintTop_toBottomOf="@+id/bananaprice" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bananaequal"
+        app:layout_constraintStart_toStartOf="@+id/bananaequal"
+        app:layout_constraintTop_toBottomOf="@+id/bananaequal" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rs"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/bananars"
+        app:layout_constraintStart_toStartOf="@+id/bananars"
+        app:layout_constraintTop_toBottomOf="@+id/bananars" />
+
+    <TextView
+        android:id="@+id/nilamtotal"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:hint="Total"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bananatotal"
+        app:layout_constraintStart_toStartOf="@+id/bananatotal"
+        app:layout_constraintTop_toBottomOf="@+id/bananatotal" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Rs"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bananatrs"
+        app:layout_constraintStart_toStartOf="@+id/bananatrs"
+        app:layout_constraintTop_toBottomOf="@+id/bananatrs" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -415,6 +415,8 @@ public class MainActivity extends AppCompatActivity {
         btntotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 int number1 = Integer.parseInt(kiwians.getText().toString());
                 int number2 = Integer.parseInt(tvans.getText().toString());
                 int number3 = Integer.parseInt(bans.getText().toString());
@@ -428,37 +430,48 @@ public class MainActivity extends AppCompatActivity {
                 float number11 = Float.parseFloat(nashans.getText().toString());
                 int number12 = Integer.parseInt(paians.getText().toString());
 
-                float add = number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9 + number10 + number11 + number12;
-                tvtotal.setText(String.valueOf(add));
-            }
+
+                    float add = number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9 + number10 + number11 + number12;
+                    tvtotal.setText(String.valueOf(add));
+                }
+
         });
 
 
-
-            save=findViewById(R.id.save);
-            save.setOnClickListener(new View.OnClickListener() {
+        save = findViewById(R.id.save);
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String date = tvSelectDate.getText().toString();
                 String quantity = kiwinum1.getText().toString();
                 String price = kiwinum2.getText().toString();
-                String totalprice= kiwians.getText().toString();
+                String totalprice = kiwians.getText().toString();
 
 
                 String appquantity = num1.getText().toString();
                 String appprice = num2.getText().toString();
-                String apptotal= tvans.getText().toString();
+                String apptotal = tvans.getText().toString();
 
                 String bquantity = bnum1.getText().toString();
                 String bprice = bnum2.getText().toString();
-                String btotal= bans.getText().toString();
+                String btotal = bans.getText().toString();
 
-                if(!quantity.isEmpty() && !price.isEmpty() && !totalprice.isEmpty()){
+                String nquantity = nilam1.getText().toString();
+                String nprice = nilam2.getText().toString();
+                String ntotal = nilamans.getText().toString();
 
-                    Data data = new Data(quantity,price,totalprice,
-                            appquantity,appprice,apptotal,
-                            bquantity,bprice,btotal
-                            );
+                if (!quantity.isEmpty() && !price.isEmpty() && !totalprice.isEmpty() &&
+                        !appquantity.isEmpty() && !appprice.isEmpty() && !apptotal.isEmpty() &&
+                        !bquantity.isEmpty() && !bprice.isEmpty() && !btotal.isEmpty() &&
+                        !nquantity.isEmpty() && !nprice.isEmpty() && !ntotal.isEmpty()
+
+                ) {
+
+                    Data data = new Data(quantity, price, totalprice,
+                            appquantity, appprice, apptotal,
+                            bquantity, bprice, btotal,
+                            nquantity, nprice, ntotal
+                    );
 
 
                     db = FirebaseDatabase.getInstance();
@@ -470,6 +483,9 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Successfully Saved", Toast.LENGTH_SHORT).show();
                         }
                     });
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "Enter Zero in all Empty fields", Toast.LENGTH_SHORT).show();
                 }
 
             }

@@ -23,7 +23,8 @@ public class SecondActivity extends AppCompatActivity {
     EditText etdate;
     TextView kiwiq, kiwip, kiwitotal;
     TextView appqun,appp,appletotal;
-    TextView bananaquntity,bananaprice,bananatotal;
+    TextView bananpack,bananaprice,bananatotal;
+    TextView nilamkg,nilamprice,nilamtotal;
     AppCompatButton readbtn;
     FirebaseDatabase db;
     DatabaseReference reference;
@@ -45,7 +46,13 @@ public class SecondActivity extends AppCompatActivity {
         appp = findViewById(R.id.appp);
         appletotal = findViewById(R.id.appletotal);
 
+        bananpack = findViewById(R.id.bananapack);
+        bananaprice = findViewById(R.id.bananaprice);
+        bananatotal = findViewById(R.id.bananatotal);
 
+        nilamkg = findViewById(R.id.nilamkg);
+        nilamprice = findViewById(R.id.nilamprice);
+        nilamtotal = findViewById(R.id.nilamtotal);
 
         readbtn=findViewById(R.id.readbtn);
 
@@ -93,9 +100,17 @@ public class SecondActivity extends AppCompatActivity {
                         String bprice = String.valueOf(dataSnapshot.child("bprice").getValue());
                         String btotal = String.valueOf(dataSnapshot.child("btotal").getValue());
 
-                        bananaquntity.setText(bquantity);
+                        bananpack.setText(bquantity);
                         bananaprice.setText(bprice);
                         bananatotal.setText(btotal);
+
+                        String nquantity = String.valueOf(dataSnapshot.child("nquantity").getValue());
+                        String nprice = String.valueOf(dataSnapshot.child("nprice").getValue());
+                        String ntotal = String.valueOf(dataSnapshot.child("ntotal").getValue());
+
+                        nilamkg.setText(nquantity);
+                        nilamprice.setText(nprice);
+                        nilamtotal.setText(ntotal);
                     }
                     else{
                         Toast.makeText(SecondActivity.this, "Data for this date is not Exist", Toast.LENGTH_SHORT).show();

@@ -1,7 +1,7 @@
 package com.example.fruitbussiness;
 
 public class Data {
-    String date, quantity, price, totalprice , appquantity,appprice,apptotal,bquantity,bprice,btotal;
+    String date, quantity, price, totalprice , appquantity,appprice,apptotal,bquantity,bprice,btotal,nquantity,nprice,ntotal;
 
 
     public Data() {
@@ -10,7 +10,9 @@ public class Data {
 
     public Data(String quantity, String price, String totalprice,
                 String appquantity,String appprice,String apptotal,
-                String bquantity,String bprice,String btotal) {
+                String bquantity,String bprice,String btotal,
+                String nquantity,String nprice,String ntotal
+    ) {
         this.quantity = quantity;
         this.price = price;
         this.totalprice = totalprice;
@@ -23,6 +25,34 @@ public class Data {
         this.bquantity = bquantity;
         this.bprice = bprice;
         this.btotal = btotal;
+
+        this.nquantity = nquantity;
+        this.nprice = nprice;
+        this.ntotal = ntotal;
+    }
+
+    public String getNquantity() {
+        return nquantity;
+    }
+
+    public void setNquantity(String nquantity) {
+        this.nquantity = nquantity;
+    }
+
+    public String getNprice() {
+        return nprice;
+    }
+
+    public void setNprice(String nprice) {
+        this.nprice = nprice;
+    }
+
+    public String getNtotal() {
+        return ntotal;
+    }
+
+    public void setNtotal(String ntotal) {
+        this.ntotal = ntotal;
     }
 
     public String getBquantity() {
